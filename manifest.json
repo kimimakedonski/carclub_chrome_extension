@@ -1,0 +1,24 @@
+{
+  "name": "CarClub Imgur Magic",
+  "description": "Add imgur support for Carclub Forum",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "carclub.html",
+    "default_icon": "carclub.png"
+  },
+  "icons": {
+    "16": "images/icon-16.png",
+    "32": "images/icon-32.png",
+    "48": "images/icon-48.png",
+    "128": "images/icon-128.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["jquery/jquery.min.js", "scripts/content.js"],
+      "matches": [
+        "https://forum.carclub.mk/*"
+      ]
+    }
+  ]
+}
